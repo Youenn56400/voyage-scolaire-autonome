@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youenn Le Ret — Ingénierie &amp; Logistique de Séjours Scolaires</title>
+  <style>
+    :root { 
+      --bg: #F8F9FA; 
+      --surface: #FFFFFF; 
+      --navy: #1E293B; 
+      --text: #334155; 
+      --muted: #64748B; 
+      --border: #E2E8F0; 
+      --radius: 12px; 
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { 
+      font-family: system-ui, -apple-system, sans-serif; 
+      background: var(--bg); 
+      color: var(--text); 
+      line-height: 1.5; 
+    }
+    .container { max-width: 640px; margin: 0 auto; padding: 32px 20px; }
+    header { text-align: center; margin-bottom: 24px; }
+    
+    .logo-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .logo-monogram {
+      font-size: 1.8rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      color: var(--navy);
+    }
+    .logo-divider {
+      width: 1px;
+      height: 24px;
+      background-color: var(--border);
+    }
+    
+    h1 { font-size: 1.5rem; font-weight: 700; color: var(--navy); }
+    .title { 
+      font-size: 0.8rem; 
+      font-weight: 600; 
+      text-transform: uppercase; 
+      letter-spacing: 0.08em; 
+      color: var(--muted); 
+      margin-top: 4px; 
+    }
+    .subtitle { font-size: 0.95rem; color: var(--navy); margin-top: 2px; }
+    .bio { margin-top: 12px; font-size: 0.9rem; color: var(--text); }
+    
+    .section-title { 
+      font-size: 0.75rem; 
+      font-weight: 700; 
+      text-transform: uppercase; 
+      letter-spacing: 0.1em; 
+      color: var(--muted); 
+      margin: 24px 0 10px; 
+    }
+    .links { display: flex; flex-direction: column; gap: 10px; }
+    .link-card { 
+      display: flex; 
+      align-items: center; 
+      gap: 14px; 
+      padding: 12px 16px; 
+      background: var(--surface); 
+      border: 1px solid var(--border); 
+      border-radius: var(--radius); 
+      text-decoration: none; 
+      color: inherit; 
+      transition: transform .15s, border-color .15s; 
+    }
+    .link-card:hover { transform: translateY(-1px); border-color: #CBD5E1; }
+    .icon { 
+      width: 36px; 
+      height: 36px; 
+      border-radius: 8px; 
+      background: #F1F5F9; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      font-size: 1.1rem; 
+      flex-shrink: 0;
+    }
+    .link-title { font-size: 0.92rem; font-weight: 600; color: var(--navy); display: block; }
+    .link-sub { font-size: 0.8rem; color: var(--muted); display: block; }
+    
+    .services { display: grid; gap: 10px; }
+    .service { 
+      background: var(--surface); 
+      border: 1px solid var(--border); 
+      border-left: 3px solid var(--navy); 
+      border-radius: var(--radius); 
+      padding: 12px 16px; 
+    }
+    .service h3 { font-size: 0.92rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+    .service p { font-size: 0.85rem; color: var(--text); }
+    
+    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; }
+    .btn { 
+      display: inline-flex; 
+      padding: 8px 18px; 
+      border-radius: 99px; 
+      font-size: 0.85rem; 
+      font-weight: 600; 
+      text-decoration: none; 
+      background: var(--navy); 
+      color: #fff; 
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo-brand">
+        <span class="logo-monogram">Y L</span>
+        <div class="logo-divider"></div>
+      </div>
+
+      <h1>Youenn Le Ret</h1>
+      <p class="title">Ingénierie &amp; Logistique de Séjours Scolaires</p>
+      <p class="subtitle">Enseignant &amp; Concepteur de voyages en autonomie</p>
+      <p class="bio">Enseignant de terrain en Bretagne, j'organise depuis plusieurs années des voyages scolaires sur mesure, en direct et sans passer par des agences clés en main.</p>
+    </header>
+
+    <h2 class="section-title">Ressources en libre accès</h2>
+    <nav class="links">
+      <a class="link-card" href="https://docs.google.com/spreadsheets/d/1XrApfX3OgJVChAQL9CF-6952LFEWwiuwb7RIkL94Jlk/edit?usp=sharing" target="_blank" rel="noopener">
+        <span class="icon">📊</span>
+        <span>
+          <strong class="link-title">Calculateur de Budget &amp; Trésorerie (Google Sheets / Excel)</strong>
+          <small class="link-sub">Modèle automatisé, verrouillé &amp; dynamique par durée — Duplicable en 1 clic</small>
+        </span>
+      </a>
+
+      <a class="link-card" href="Protocole_Securite_Voyage_Scolaire.pdf" target="_blank" rel="noopener">
+        <span class="icon">🛡️</span>
+        <span>
+          <strong class="link-title">Protocole de Sécurité &amp; Gestion des Autonomies</strong>
+          <small class="link-sub">Cadre méthodologique, chartes, balises GPS &amp; exemple de badge contact — PDF</small>
+        </span>
+      </a>
+
+      <a class="link-card" href="#">
+        <span class="icon">📅</span>
+        <span>
+          <strong class="link-title">Check-list Chronologique de l'Organisateur</strong>
+          <small class="link-sub">Échéancier complet de J-180 au départ — PDF / Notion</small>
+        </span>
+      </a>
+    </nav>
+
+    <h2 class="section-title">Accompagnement &amp; Prestations</h2>
+    <section class="services">
+      <article class="service">
+        <h3>Audit &amp; Relecture de Dossiers</h3>
+        <p>Vérification de la conformité administrative, du budget et de la logistique avant validation par le chef d'établissement.</p>
+      </article>
+      <article class="service">
+        <h3>Ingénierie d'Itinéraires Sur Mesure</h3>
+        <p>Conception complète du programme, recherche de prestataires et montage du dossier en gestion directe sans intermédiaire.</p>
+      </article>
+      <article class="service">
+        <h3>Formation &amp; Interventions</h3>
+        <p>Accompagnement des équipes pédagogiques à la méthodologie d'organisation de séjours en autonomie.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p style="font-size: 0.85rem; margin-bottom: 8px;">Vous préparez un séjour ou souhaitez échanger sur un projet ?</p>
+      <a class="btn" href="mailto:youennlr@gmail.com">✉️ Me contacter par e-mail</a>
+    </footer>
+  </main>
+</body>
+</html>
